@@ -29,6 +29,7 @@ this app built with Java , SharedPreference,php as backend , MySql for database,
 4. PHP
 5. Mysql and XAMPP
 
+clone [`Backend-E-Bioskop`](https://github.com/dwikysahut/backend-E-Bioskop.git) for backend server
 
 ## Contributor
 © [Dwiky Satria Hutomo](https://github.com/dwikysahut 'Dwiky Satria Hutomo')
