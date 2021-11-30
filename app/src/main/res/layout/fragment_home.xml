@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:id="@+id/pullRequest"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home.HomeFragment"
+    tools:showIn="@layout/activity_main"
+            android:layout_height="wrap_content">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/progressBarGrid"/>
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:fillColor="#FFFFFFFF"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="5000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:layout_margin="20dp"
+        android:id="@+id/imageBanner"
+        android:layout_below="@+id/carouselView"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rvGrid"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnGoToOrder"
+        android:text="Order Now"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Release"
+            android:id="@+id/text_release"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/imageBanner"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View More >>"
+            android:textColor="@color/yellow_700"
+            android:id="@+id/text_view_more"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imageBanner"
+            android:textStyle="bold"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvGrid"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            android:layout_below="@+id/text_release"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+</ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

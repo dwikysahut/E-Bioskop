@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_items_movie"
+    android:orientation="vertical"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="5dp">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="125dp"
+            android:id="@+id/img_movie_order"
+            android:scaleType="fitXY"
+            android:src="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:id="@+id/tv_dateShow_order"
+            android:layout_below="@+id/img_movie_order"
+            android:textStyle="bold|italic"
+            android:text="@string/date"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/img_movie_order"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:id="@+id/tv_title_movie_order"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/title"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/black"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/tv_showtime_order"
+
+                    android:text="@string/showtime"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="left"
+                    android:textColor="@android:color/darker_gray"
+
+                    android:id="@+id/tv_text_jumlah"
+                    android:text="jumlah :"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="left"
+                    android:textColor="@android:color/black"
+                    android:layout_toRightOf="@id/tv_text_jumlah"
+
+                    android:id="@+id/tv_text_jumlah_order"
+                    android:text="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_status_order"
+                    android:id="@+id/tv_code_transaction"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:text="1223ASDA223D"
+                    android:fontFamily="sans-serif-black"
+                    android:textStyle="bold|italic"
+                    android:layout_alignParentRight="true"
+                    android:textAlignment="center"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="left"
+                    android:textColor="@android:color/black"
+                    android:layout_below="@+id/tv_text_jumlah"
+                    android:id="@+id/tv_text_status"
+                    android:text="Status :"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="left"
+
+                    android:layout_below="@+id/tv_text_jumlah"
+                    android:layout_toRightOf="@id/tv_text_status"
+                    android:id="@+id/tv_status_order"
+                    android:text="Waiting"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="left"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_below="@+id/tv_code_transaction"
+                    android:id="@+id/tv_text_date_added"
+                    android:text="Order at: "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="left"
+                    android:layout_toRightOf="@+id/tv_text_date_added"
+                    android:layout_below="@+id/tv_code_transaction"
+                    android:textColor="@android:color/black"
+
+                    android:id="@+id/tv_date_added_order"
+                    android:text="Order"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:id="@+id/layout_btnAdmin_order"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="4dp"
+                    android:translationZ="2dp"
+                    android:stateListAnimator="@null"
+
+                    android:layout_toLeftOf="@+id/btnAdminCancel"
+                    android:id="@+id/btnConfirmAdmin"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:elevation="4dp"
+                    android:translationZ="2dp"
+                    android:stateListAnimator="@null"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"
+
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btnAdminCancel"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

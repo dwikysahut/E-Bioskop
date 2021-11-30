@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/register"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black" />
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/username_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                app:met_floatingLabel="normal"
+                android:background="@android:color/white"
+                android:hint="Username"
+                android:inputType="text"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/email_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                app:met_floatingLabel="normal"
+                android:background="@android:color/white"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/password_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:met_floatingLabel="normal"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/nama_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:met_floatingLabel="normal"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:hint="Nama Lengkap"
+                android:inputType="text"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:text="Gender"/>
+            <RadioGroup
+                android:id="@+id/rdGroup_gender"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical" >
+                <RadioButton
+                    android:id="@+id/rb_laki"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-laki" />
+                <RadioButton
+                    android:id="@+id/rb_perempuan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan" />
+            </RadioGroup>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Register"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:id="@+id/register"
+                android:background="@drawable/button_selection"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

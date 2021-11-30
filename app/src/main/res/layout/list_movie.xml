@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_items_movie"
+    android:orientation="vertical"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="5dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:id="@+id/img_item_movie"
+            android:scaleType="fitXY"
+            android:src="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:id="@+id/tv_title_item_movie"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/title"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="8sp"
+                android:minHeight="10dp"
+                android:clickable="false"
+                android:enabled="false"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:id="@+id/btn_genre_item_movie"
+                android:gravity="left|center_vertical"
+                android:textStyle="italic"
+                android:text="@string/genre"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_date_item_movie"
+                    android:textStyle="bold|italic"
+                    android:text="@string/date"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/tv_showtime_item_movie"
+
+                    android:text="@string/showtime"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="left"
+                    android:textColor="@android:color/holo_orange_light"
+
+                    android:id="@+id/tv_rating_item_movie"
+                    android:text="@string/rating"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_gravity="left"
+                    android:layout_toLeftOf="@id/tv_stock_item_movie"
+                    android:layout_marginLeft="150dp"
+                    android:id="@+id/text_stock_item_movie"
+                    android:text="@string/stock"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="left"
+
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/tv_stock_item_movie"
+                    android:text="10"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:id="@+id/layout_btnAdmin"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="edit"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_toLeftOf="@+id/btnDelete"
+                    android:id="@+id/btnEdit"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:layout_weight="1"
+
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btnDelete"/>
+
+            </RelativeLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:id="@+id/btnOrder"
+                android:layout_marginTop="20dp"
+                android:text="Order Now"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

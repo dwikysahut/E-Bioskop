@@ -1,0 +1,125 @@
+<resources>
+    <array name="seat">
+        <item>A1</item>
+        <item>A2</item>
+        <item>A3</item>
+        <item>A4</item>
+        <item>A5</item>
+        <item>A6</item>
+        <item>A7</item>
+        <item>A8</item>
+        <item>A9</item>
+        <item>A10</item>
+
+        <item>B1</item>
+        <item>B2</item>
+        <item>B3</item>
+        <item>B4</item>
+        <item>B5</item>
+        <item>B6</item>
+        <item>B7</item>
+        <item>B8</item>
+        <item>B9</item>
+        <item>B10</item>
+
+        <item>B1</item>
+        <item>B2</item>
+        <item>B3</item>
+        <item>B4</item>
+        <item>B5</item>
+        <item>B6</item>
+        <item>B7</item>
+        <item>B8</item>
+        <item>B9</item>
+        <item>B10</item>
+
+        <item>C1</item>
+        <item>C2</item>
+        <item>C3</item>
+        <item>C4</item>
+        <item>C5</item>
+        <item>C6</item>
+        <item>C7</item>
+        <item>C8</item>
+        <item>C9</item>
+        <item>C10</item>
+
+        <item>D1</item>
+        <item>D2</item>
+        <item>D3</item>
+        <item>D4</item>
+        <item>D5</item>
+        <item>D6</item>
+        <item>D7</item>
+        <item>D8</item>
+        <item>D9</item>
+        <item>D10</item>
+
+        <item>E1</item>
+        <item>E2</item>
+        <item>E3</item>
+        <item>E4</item>
+        <item>E5</item>
+        <item>E6</item>
+        <item>E7</item>
+        <item>E8</item>
+        <item>E9</item>
+        <item>E10</item>
+
+    </array>
+    <string name="app_name">E-Cinema</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_detail_movie">Detail Movie</string>
+    <string name="order">Order</string>
+    <string name="movies">Movies</string>
+    <string name="movie">movie</string>
+    <string name="genre">Genre</string>
+    <string name="overview">Overview</string>
+    <string name="description">Description</string>
+    <string name="tv_shows">TV Shows</string>
+    <string name="title">Title</string>
+    <string name="namaku">Dwiky Satria Huomo</string>
+
+    <string name="nrp">201118001</string>
+    <string name="date">12-05-2021</string>
+
+    <string name="showtime">10.00 - 11.00</string>
+    <string name="rating">0.0</string>
+    <string name="text_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="share">Share</string>
+
+    <string name="div_10">/ 10</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_movie">Movie List</string>
+
+    <string name="menu_my_order">My Order</string>
+
+    <string name="prefStatus">loggedin</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="logout">Logout</string>
+
+    <string name="about">About</string>
+    <string name="stock">Stock :</string>
+
+    <string name="slide_1_title">PEMESANAN TIKET</string>
+    <string name="slide_1_desc">Kemudahan dalam memesan tiket bioskop</string>
+
+    <string name="slide_2_title">BEBAS ANTRIAN</string>
+    <string name="slide_2_desc">Meminimalisir antrian demi menjaga protokol kesehatan</string>
+
+    <string name="slide_3_title">BAYAR TUNAI</string>
+    <string name="slide_3_desc">Tidak perlu khawatir dengan pembayaran non tunai</string>
+
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+
+</resources>
